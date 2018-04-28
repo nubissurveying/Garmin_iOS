@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E1071632094074100E273B4 /* ConnectIQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1D3B3E2092AD6A006112D5 /* ConnectIQ.framework */; };
+		2E1071642094074100E273B4 /* ConnectIQ.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1D3B3E2092AD6A006112D5 /* ConnectIQ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E1D3B2D2092AD27006112D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D3B2C2092AD27006112D5 /* AppDelegate.swift */; };
+		2E1D3B2F2092AD27006112D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D3B2E2092AD27006112D5 /* ViewController.swift */; };
+		2E1D3B322092AD27006112D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D3B302092AD27006112D5 /* Main.storyboard */; };
+		2E1D3B342092AD29006112D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D3B332092AD29006112D5 /* Assets.xcassets */; };
+		2E1D3B372092AD29006112D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D3B352092AD29006112D5 /* LaunchScreen.storyboard */; };
+		2E1D3B3F2092AD6B006112D5 /* ConnectIQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1D3B3E2092AD6A006112D5 /* ConnectIQ.framework */; };
+		2E1D3B472094027D006112D5 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D3B442094027D006112D5 /* Constants.m */; };
+		2E1D3B482094027D006112D5 /* DeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D3B452094027D006112D5 /* DeviceManager.m */; };
+		91F259C92FBA1CD4A6DE91D3 /* Pods_GarminAccelerometer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44AF24C5494E5FE402754F4 /* Pods_GarminAccelerometer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2E1071652094074100E273B4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2E1071642094074100E273B4 /* ConnectIQ.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2E1D3B292092AD27006112D5 /* GarminAccelerometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GarminAccelerometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E1D3B2C2092AD27006112D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E1D3B2E2092AD27006112D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E1D3B312092AD27006112D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E1D3B332092AD29006112D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E1D3B362092AD29006112D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E1D3B382092AD29006112D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E1D3B3E2092AD6A006112D5 /* ConnectIQ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ConnectIQ.framework; sourceTree = "<group>"; };
+		2E1D3B402092ADBF006112D5 /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
+		2E1D3B432094027C006112D5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		2E1D3B442094027D006112D5 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		2E1D3B452094027D006112D5 /* DeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceManager.m; sourceTree = "<group>"; };
+		2E1D3B462094027D006112D5 /* DeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceManager.h; sourceTree = "<group>"; };
+		76A804D9CEEB0B3F3B03AE56 /* Pods-GarminAccelerometer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarminAccelerometer.release.xcconfig"; path = "Pods/Target Support Files/Pods-GarminAccelerometer/Pods-GarminAccelerometer.release.xcconfig"; sourceTree = "<group>"; };
+		C44AF24C5494E5FE402754F4 /* Pods_GarminAccelerometer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarminAccelerometer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE265DD2CDE8D423762D2DAC /* Pods-GarminAccelerometer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarminAccelerometer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GarminAccelerometer/Pods-GarminAccelerometer.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E1D3B262092AD27006112D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E1071632094074100E273B4 /* ConnectIQ.framework in Frameworks */,
+				2E1D3B3F2092AD6B006112D5 /* ConnectIQ.framework in Frameworks */,
+				91F259C92FBA1CD4A6DE91D3 /* Pods_GarminAccelerometer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E1D3B202092AD27006112D5 = {
+			isa = PBXGroup;
+			children = (
+				2E1D3B2B2092AD27006112D5 /* GarminAccelerometer */,
+				2E1D3B2A2092AD27006112D5 /* Products */,
+				2E1D3B3E2092AD6A006112D5 /* ConnectIQ.framework */,
+				6291501266644C145BCB5964 /* Pods */,
+				D270CA774E3002CEE6018B24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2E1D3B2A2092AD27006112D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E1D3B292092AD27006112D5 /* GarminAccelerometer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E1D3B2B2092AD27006112D5 /* GarminAccelerometer */ = {
+			isa = PBXGroup;
+			children = (
+				2E1D3B432094027C006112D5 /* Constants.h */,
+				2E1D3B442094027D006112D5 /* Constants.m */,
+				2E1D3B462094027D006112D5 /* DeviceManager.h */,
+				2E1D3B452094027D006112D5 /* DeviceManager.m */,
+				2E1D3B2C2092AD27006112D5 /* AppDelegate.swift */,
+				2E1D3B2E2092AD27006112D5 /* ViewController.swift */,
+				2E1D3B302092AD27006112D5 /* Main.storyboard */,
+				2E1D3B332092AD29006112D5 /* Assets.xcassets */,
+				2E1D3B352092AD29006112D5 /* LaunchScreen.storyboard */,
+				2E1D3B382092AD29006112D5 /* Info.plist */,
+				2E1D3B402092ADBF006112D5 /* Bridging_Header.h */,
+			);
+			path = GarminAccelerometer;
+			sourceTree = "<group>";
+		};
+		6291501266644C145BCB5964 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE265DD2CDE8D423762D2DAC /* Pods-GarminAccelerometer.debug.xcconfig */,
+				76A804D9CEEB0B3F3B03AE56 /* Pods-GarminAccelerometer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D270CA774E3002CEE6018B24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C44AF24C5494E5FE402754F4 /* Pods_GarminAccelerometer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E1D3B282092AD27006112D5 /* GarminAccelerometer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E1D3B3B2092AD29006112D5 /* Build configuration list for PBXNativeTarget "GarminAccelerometer" */;
+			buildPhases = (
+				D1ADE7D0CD3A6EAC9C34AA5A /* [CP] Check Pods Manifest.lock */,
+				2E1D3B252092AD27006112D5 /* Sources */,
+				2E1D3B262092AD27006112D5 /* Frameworks */,
+				2E1D3B272092AD27006112D5 /* Resources */,
+				179CE3CC6FC71BDA320E8B4E /* [CP] Embed Pods Frameworks */,
+				2E1071652094074100E273B4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GarminAccelerometer;
+			productName = GarminAccelerometer;
+			productReference = 2E1D3B292092AD27006112D5 /* GarminAccelerometer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E1D3B212092AD27006112D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Qinjia Huang";
+				TargetAttributes = {
+					2E1D3B282092AD27006112D5 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2E1D3B242092AD27006112D5 /* Build configuration list for PBXProject "GarminAccelerometer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E1D3B202092AD27006112D5;
+			productRefGroup = 2E1D3B2A2092AD27006112D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E1D3B282092AD27006112D5 /* GarminAccelerometer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E1D3B272092AD27006112D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E1D3B372092AD29006112D5 /* LaunchScreen.storyboard in Resources */,
+				2E1D3B342092AD29006112D5 /* Assets.xcassets in Resources */,
+				2E1D3B322092AD27006112D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		179CE3CC6FC71BDA320E8B4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GarminAccelerometer/Pods-GarminAccelerometer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GarminAccelerometer/Pods-GarminAccelerometer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1ADE7D0CD3A6EAC9C34AA5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GarminAccelerometer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E1D3B252092AD27006112D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E1D3B2F2092AD27006112D5 /* ViewController.swift in Sources */,
+				2E1D3B482094027D006112D5 /* DeviceManager.m in Sources */,
+				2E1D3B2D2092AD27006112D5 /* AppDelegate.swift in Sources */,
+				2E1D3B472094027D006112D5 /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2E1D3B302092AD27006112D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E1D3B312092AD27006112D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E1D3B352092AD29006112D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E1D3B362092AD29006112D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E1D3B392092AD29006112D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = GarminAccelerometer/Bridging_Header.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E1D3B3A2092AD29006112D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = GarminAccelerometer/Bridging_Header.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E1D3B3C2092AD29006112D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE265DD2CDE8D423762D2DAC /* Pods-GarminAccelerometer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 426VKG8HJT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GarminAccelerometer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uscCESR.GarminAccelerometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E1D3B3D2092AD29006112D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76A804D9CEEB0B3F3B03AE56 /* Pods-GarminAccelerometer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 426VKG8HJT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GarminAccelerometer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uscCESR.GarminAccelerometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E1D3B242092AD27006112D5 /* Build configuration list for PBXProject "GarminAccelerometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E1D3B392092AD29006112D5 /* Debug */,
+				2E1D3B3A2092AD29006112D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E1D3B3B2092AD29006112D5 /* Build configuration list for PBXNativeTarget "GarminAccelerometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E1D3B3C2092AD29006112D5 /* Debug */,
+				2E1D3B3D2092AD29006112D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E1D3B212092AD27006112D5 /* Project object */;
+}
