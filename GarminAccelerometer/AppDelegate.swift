@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IQUIOverrideDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        ConnectIQ.sharedInstance().initialize(withUrlScheme: ReturnURLScheme, uiOverrideDelegate: self)
+        ConnectIQ.sharedInstance().initialize(withUrlScheme: "garmin-ios-cesr", uiOverrideDelegate: nil)
+//        print("appDelegate", ReturnURLScheme)
         DeviceManager.shared().restoreDevicesFromFileSystem()
         // Override point for customization after application launch.
         return true
@@ -44,17 +45,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IQUIOverrideDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        print("Received URL from '%@': %@", sourceApplication!, url)
+    
+    //func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+    //    print("Received URL from '%@': %@", sourceApplication!, url)
         
-//        if(url.scheme == ReturnURLScheme && sourceApplication == IQGCMBundle){
-//            let devices = ConnectIQ.sharedInstance().parseDeviceSelectionResponse(from: url)
-//            if(devices != nil && (devices?.count)! > 0){
-//                
-//            }
-//        }
         
-        return DeviceManager.shared().handleOpen(url, sourceApplication: sourceApplication)
+    //    return eviceManager.shared().handleOpen(url, sourceApplication: sourceApplication)
+    //}
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        print("Received URL from '%@': %@", options[.sourceApplication]!, url)
+        
+        return DeviceManager.shared().handleOpen(url, sourceApplication: options[.sourceApplication]! as! String)
     }
     func needsToInstallConnectMobile(){
         ConnectIQ.sharedInstance().showAppStoreForConnectMobile()
