@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Use your blooth to connect with garmin device</string>
 	<key>CFBundleDisplayName</key>
 	<string>garmin-ios-cesr</string>
 	<key>CFBundleDevelopmentRegion</key>

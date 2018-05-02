@@ -6,6 +6,7 @@ target ‘GarminAccelerometer’ do
   use_frameworks!
 
 pod 'Alamofire'
+pod 'CryptoSwift', :git => "https://github.com/krzyzanowskim/CryptoSwift", :branch => "master"
 
 
 end

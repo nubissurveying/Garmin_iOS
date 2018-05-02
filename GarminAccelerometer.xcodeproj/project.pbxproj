@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E069A8A2097E19900D60CD5 /* DeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E069A882097E19800D60CD5 /* DeviceManager.m */; };
+		2E069A8D2097E1B400D60CD5 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E069A8B2097E1B400D60CD5 /* Constants.m */; };
+		2E069A942097E21400D60CD5 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E069A8E2097E21400D60CD5 /* Strings.swift */; };
+		2E069A952097E21400D60CD5 /* NubisDelayedAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E069A8F2097E21400D60CD5 /* NubisDelayedAnswer.swift */; };
+		2E069A962097E21400D60CD5 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E069A902097E21400D60CD5 /* DateUtil.swift */; };
+		2E069A972097E21400D60CD5 /* MCrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E069A912097E21400D60CD5 /* MCrypt.swift */; };
+		2E069A982097E21400D60CD5 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E069A922097E21400D60CD5 /* Upload.swift */; };
+		2E069A992097E21400D60CD5 /* StringHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E069A932097E21400D60CD5 /* StringHex.swift */; };
 		2E1071632094074100E273B4 /* ConnectIQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1D3B3E2092AD6A006112D5 /* ConnectIQ.framework */; };
 		2E1071642094074100E273B4 /* ConnectIQ.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1D3B3E2092AD6A006112D5 /* ConnectIQ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2E1D3B2D2092AD27006112D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D3B2C2092AD27006112D5 /* AppDelegate.swift */; };
@@ -15,8 +23,7 @@
 		2E1D3B342092AD29006112D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D3B332092AD29006112D5 /* Assets.xcassets */; };
 		2E1D3B372092AD29006112D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D3B352092AD29006112D5 /* LaunchScreen.storyboard */; };
 		2E1D3B3F2092AD6B006112D5 /* ConnectIQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1D3B3E2092AD6A006112D5 /* ConnectIQ.framework */; };
-		2E1D3B472094027D006112D5 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D3B442094027D006112D5 /* Constants.m */; };
-		2E1D3B482094027D006112D5 /* DeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D3B452094027D006112D5 /* DeviceManager.m */; };
+		2E45BE4A2097E44000224A45 /* AcceFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E45BE492097E44000224A45 /* AcceFileManager.swift */; };
 		91F259C92FBA1CD4A6DE91D3 /* Pods_GarminAccelerometer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44AF24C5494E5FE402754F4 /* Pods_GarminAccelerometer.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +42,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2E069A882097E19800D60CD5 /* DeviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceManager.m; sourceTree = "<group>"; };
+		2E069A892097E19800D60CD5 /* DeviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceManager.h; sourceTree = "<group>"; };
+		2E069A8B2097E1B400D60CD5 /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		2E069A8C2097E1B400D60CD5 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		2E069A8E2097E21400D60CD5 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		2E069A8F2097E21400D60CD5 /* NubisDelayedAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NubisDelayedAnswer.swift; sourceTree = "<group>"; };
+		2E069A902097E21400D60CD5 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		2E069A912097E21400D60CD5 /* MCrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCrypt.swift; sourceTree = "<group>"; };
+		2E069A922097E21400D60CD5 /* Upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
+		2E069A932097E21400D60CD5 /* StringHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHex.swift; sourceTree = "<group>"; };
 		2E1D3B292092AD27006112D5 /* GarminAccelerometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GarminAccelerometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E1D3B2C2092AD27006112D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E1D3B2E2092AD27006112D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,10 +61,7 @@
 		2E1D3B382092AD29006112D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E1D3B3E2092AD6A006112D5 /* ConnectIQ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ConnectIQ.framework; sourceTree = "<group>"; };
 		2E1D3B402092ADBF006112D5 /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
-		2E1D3B432094027C006112D5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		2E1D3B442094027D006112D5 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
-		2E1D3B452094027D006112D5 /* DeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceManager.m; sourceTree = "<group>"; };
-		2E1D3B462094027D006112D5 /* DeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceManager.h; sourceTree = "<group>"; };
+		2E45BE492097E44000224A45 /* AcceFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceFileManager.swift; sourceTree = "<group>"; };
 		76A804D9CEEB0B3F3B03AE56 /* Pods-GarminAccelerometer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarminAccelerometer.release.xcconfig"; path = "Pods/Target Support Files/Pods-GarminAccelerometer/Pods-GarminAccelerometer.release.xcconfig"; sourceTree = "<group>"; };
 		C44AF24C5494E5FE402754F4 /* Pods_GarminAccelerometer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarminAccelerometer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE265DD2CDE8D423762D2DAC /* Pods-GarminAccelerometer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarminAccelerometer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GarminAccelerometer/Pods-GarminAccelerometer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +81,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E069A9A2097E22400D60CD5 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				2E069A902097E21400D60CD5 /* DateUtil.swift */,
+				2E069A912097E21400D60CD5 /* MCrypt.swift */,
+				2E069A8F2097E21400D60CD5 /* NubisDelayedAnswer.swift */,
+				2E069A932097E21400D60CD5 /* StringHex.swift */,
+				2E069A8E2097E21400D60CD5 /* Strings.swift */,
+				2E069A922097E21400D60CD5 /* Upload.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 		2E1D3B202092AD27006112D5 = {
 			isa = PBXGroup;
 			children = (
@@ -89,11 +116,13 @@
 		2E1D3B2B2092AD27006112D5 /* GarminAccelerometer */ = {
 			isa = PBXGroup;
 			children = (
-				2E1D3B432094027C006112D5 /* Constants.h */,
-				2E1D3B442094027D006112D5 /* Constants.m */,
-				2E1D3B462094027D006112D5 /* DeviceManager.h */,
-				2E1D3B452094027D006112D5 /* DeviceManager.m */,
+				2E069A9A2097E22400D60CD5 /* util */,
 				2E1D3B2C2092AD27006112D5 /* AppDelegate.swift */,
+				2E069A8C2097E1B400D60CD5 /* Constants.h */,
+				2E069A8B2097E1B400D60CD5 /* Constants.m */,
+				2E069A892097E19800D60CD5 /* DeviceManager.h */,
+				2E45BE492097E44000224A45 /* AcceFileManager.swift */,
+				2E069A882097E19800D60CD5 /* DeviceManager.m */,
 				2E1D3B2E2092AD27006112D5 /* ViewController.swift */,
 				2E1D3B302092AD27006112D5 /* Main.storyboard */,
 				2E1D3B332092AD29006112D5 /* Assets.xcassets */,
@@ -205,10 +234,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GarminAccelerometer/Pods-GarminAccelerometer-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -240,10 +271,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E069A982097E21400D60CD5 /* Upload.swift in Sources */,
+				2E069A952097E21400D60CD5 /* NubisDelayedAnswer.swift in Sources */,
 				2E1D3B2F2092AD27006112D5 /* ViewController.swift in Sources */,
-				2E1D3B482094027D006112D5 /* DeviceManager.m in Sources */,
+				2E069A8A2097E19900D60CD5 /* DeviceManager.m in Sources */,
+				2E069A942097E21400D60CD5 /* Strings.swift in Sources */,
 				2E1D3B2D2092AD27006112D5 /* AppDelegate.swift in Sources */,
-				2E1D3B472094027D006112D5 /* Constants.m in Sources */,
+				2E45BE4A2097E44000224A45 /* AcceFileManager.swift in Sources */,
+				2E069A992097E21400D60CD5 /* StringHex.swift in Sources */,
+				2E069A8D2097E1B400D60CD5 /* Constants.m in Sources */,
+				2E069A972097E21400D60CD5 /* MCrypt.swift in Sources */,
+				2E069A962097E21400D60CD5 /* DateUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,10 +436,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = GarminAccelerometer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uscCESR.GarminAccelerometer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,10 +459,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = GarminAccelerometer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uscCESR.GarminAccelerometer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
