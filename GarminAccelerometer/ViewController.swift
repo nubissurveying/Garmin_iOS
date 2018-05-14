@@ -14,9 +14,13 @@ import Alamofire
 class ViewController: UIViewController, DeviceManagerDelegate, IQDeviceEventDelegate, IQAppMessageDelegate{
     
     @IBOutlet weak var deviceInfo: UILabel!
-    
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var AccelerometerData: UILabel!
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var collectButton: UIButton!
+    
+    
     
     @IBAction func findDevice(_ sender: Any) {
         ConnectIQ.sharedInstance().showDeviceSelection()
@@ -66,6 +70,9 @@ class ViewController: UIViewController, DeviceManagerDelegate, IQDeviceEventDele
         stringAppUUID = UUID.init(uuidString: "a3421fee-d289-106a-538c-b9547ab12095")
         // Do any additional setup after loading the view, typically from a nib.
         acceFileManager = AcceFileManager(fileName: "acce")
+//        startButton.isEnabled = false
+        stopButton.isEnabled = false
+        collectButton.isEnabled = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -95,7 +102,16 @@ class ViewController: UIViewController, DeviceManagerDelegate, IQDeviceEventDele
         print("receive message", message)
         time.text = DateUtil.stringifyAll(calendar: Date())
         AccelerometerData.text = message as? String
-        acceFileManager.processData(data: message as! String)
+        
+        if(acceFileManager.processData(data: message as! String)){
+            let alert = UIAlertController(title: "Collect Complete", message: "Already collect data from device, do you want to upload to the server?", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Upload", style: UIAlertActionStyle.default, handler:{
+                (handler) in
+                self.acceFileManager.uploadFile()
+            } ))
+            self.present(alert, animated: true, completion: nil)
+        }
+        
     }
     
     func devicesChanged() {
@@ -104,6 +120,7 @@ class ViewController: UIViewController, DeviceManagerDelegate, IQDeviceEventDele
             let device = curr as! IQDevice
             print("Registering for device events from '%@'", device.friendlyName)
             connectIQ.register(forDeviceEvents: device, delegate: self)
+//            startButton.isEnabled = true
         }
     }
     
@@ -115,6 +132,33 @@ class ViewController: UIViewController, DeviceManagerDelegate, IQDeviceEventDele
             
         
     }
-
+    @IBAction func sendStartMessage(_ sender: Any) {
+        
+        sendMessageToDevice(message: "start")
+        stopButton.isEnabled = true
+        collectButton.isEnabled = false
+        startButton.isEnabled = false
+    }
+    
+    @IBAction func sendCollectMessage(_ sender: Any) {
+        sendMessageToDevice(message: "collect")
+        
+        
+    }
+    @IBAction func sendStopMessage(_ sender: Any) {
+        sendMessageToDevice(message: "stop")
+        collectButton.isEnabled = true
+        startButton.isEnabled = true
+        stopButton.isEnabled = false
+    }
+    func sendMessageToDevice(message : String) {
+        connectIQ.sendMessage(message, to: stringApp, progress: { (sentBytes, totalBytes) in
+            let percent = 100 * Double(sentBytes) / Double(totalBytes)
+            print("send progress", percent, sentBytes, totalBytes)
+            
+        }, completion: {(result) in
+            print("send message finished with result", NSStringFromSendMessageResult(result))
+        })
+    }
 }
 
