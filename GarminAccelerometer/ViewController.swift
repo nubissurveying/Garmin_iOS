@@ -20,7 +20,7 @@ class ViewController: UIViewController, DeviceManagerDelegate, IQDeviceEventDele
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var collectButton: UIButton!
     
-    
+    var count = 0;
     
     @IBAction func findDevice(_ sender: Any) {
         ConnectIQ.sharedInstance().showDeviceSelection()
@@ -71,8 +71,8 @@ class ViewController: UIViewController, DeviceManagerDelegate, IQDeviceEventDele
         // Do any additional setup after loading the view, typically from a nib.
         acceFileManager = AcceFileManager(fileName: "acce")
 //        startButton.isEnabled = false
-        stopButton.isEnabled = false
-        collectButton.isEnabled = false
+//        stopButton.isEnabled = false
+//        collectButton.isEnabled = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -100,7 +100,8 @@ class ViewController: UIViewController, DeviceManagerDelegate, IQDeviceEventDele
 
     func receivedMessage(_ message: Any!, from app: IQApp!) {
         print("receive message", message)
-        time.text = DateUtil.stringifyAll(calendar: Date())
+        count = count + 1
+        time.text = "\(count)  " + DateUtil.stringifyAll(calendar: Date())
         AccelerometerData.text = message as? String
         
         if(acceFileManager.processData(data: message as! String)){
@@ -109,6 +110,9 @@ class ViewController: UIViewController, DeviceManagerDelegate, IQDeviceEventDele
                 (handler) in
                 self.acceFileManager.uploadFile()
             } ))
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+                print("Handle Cancel Logic here")
+            }))
             self.present(alert, animated: true, completion: nil)
         }
         
@@ -135,21 +139,21 @@ class ViewController: UIViewController, DeviceManagerDelegate, IQDeviceEventDele
     @IBAction func sendStartMessage(_ sender: Any) {
         
         sendMessageToDevice(message: "start")
-        stopButton.isEnabled = true
-        collectButton.isEnabled = false
-        startButton.isEnabled = false
+//        stopButton.isEnabled = true
+//        collectButton.isEnabled = false
+//        startButton.isEnabled = false
     }
     
     @IBAction func sendCollectMessage(_ sender: Any) {
         sendMessageToDevice(message: "collect")
-        
+        count = 0
         
     }
     @IBAction func sendStopMessage(_ sender: Any) {
         sendMessageToDevice(message: "stop")
-        collectButton.isEnabled = true
-        startButton.isEnabled = true
-        stopButton.isEnabled = false
+//        collectButton.isEnabled = true
+//        startButton.isEnabled = true
+//        stopButton.isEnabled = false
     }
     func sendMessageToDevice(message : String) {
         connectIQ.sendMessage(message, to: stringApp, progress: { (sentBytes, totalBytes) in
